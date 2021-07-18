@@ -35,7 +35,7 @@ You will also need to build the two tests in the `CheckoutForm.test.js` file and
 * [x] Push commits: git push origin `<firstName-lastName>`.
 * [x] **RUN** `npm install` to install your dependencies.
 * [x] **RUN** `npm start` to start your application.
-- [ ] In another terminal window, **RUN** `npm test` to start your test runner. (It is recommended you do this only when actually building tests - any change in your app will make the tests run, and that could eat up your computer power)
+- [x] In another terminal window, **RUN** `npm test` to start your test runner. (It is recommended you do this only when actually building tests - any change in your app will make the tests run, and that could eat up your computer power)
 
 ### Task 2: CodeGrade Setup
 * [x] Open the assignment in Canvas and following along with the attached document [here.](https://www.notion.so/lambdaschool/Submitting-an-assignment-via-Code-Grade-A-Step-by-Step-Walkthrough-07bd65f5f8364e709ecb5064735ce374).
@@ -116,8 +116,20 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What are the main differences between a stateful and a functional component?
 
+A stateful component has a constructor as well as the ability to manage its own internal state. Functional components return whatever React/JS operations we build in them and must always be exported to be called.
+
 2. When does a componentWillMount function be called? What about a componentWillUpdate?
+
+'componentWillMount' functions will be called just prior to the component being mounted, as well as just prior to 'render()'. 
 
 3. Define stateful logic.
 
+The system of handling events and/or state within a component.
+
 4. What are the three step of creating a successful test? What is done in each phase?
+
+Arrange, Act, Assert.
+
+'Arrange' tests for an element being rendered into the DOM. 
+'Act' tests by querying the dom for elements we expect.
+'Assert' completes the test by rendering our test elements.
